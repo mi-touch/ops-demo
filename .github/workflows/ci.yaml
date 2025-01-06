@@ -28,7 +28,7 @@ jobs:
       - name: Congure Git Author
         run: |
           git config --local user.email "timileyinadefare@yahoo.com"
-          git config --local user.name "mi-touch"
+          git config --local user.name "Timileyin Adefare"
       - name: Update Helm Chart with new image tag
         run: |
           sed -i "s/tag:.*/tag: ${{ env.SHORT_SHA }}/" ./complete-devops-project-time-printer/values.yaml
